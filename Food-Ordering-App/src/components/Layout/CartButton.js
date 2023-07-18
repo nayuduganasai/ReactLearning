@@ -6,7 +6,7 @@ const CartButton = (props) =>{
 
     const cartContext = useContext(CartContext);
     const[buttonHighlighted,setButtonHighlighted]=useState(false);
-    const {items} = cartContext
+    const {items} = cartContext 
 
     const cartItems = items.reduce((curNum,item)=>{
                             return curNum+item.amount;
